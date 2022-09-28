@@ -1,1 +1,1 @@
-Recursive search and Convert Script
+Recursively searchs and convert TIFs to JPEG
