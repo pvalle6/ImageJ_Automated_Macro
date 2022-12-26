@@ -1,3 +1,4 @@
+"""Search and Convert Script, place folder in DIRECTORY_LOC"""
 import os #used in date, directory naming
 from datetime import date
 import imagej #imports necessary imagej module
