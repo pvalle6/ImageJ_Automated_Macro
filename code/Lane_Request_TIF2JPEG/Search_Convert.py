@@ -13,6 +13,7 @@ day = date.today()
 
 ij = imagej.init('sc.fiji:fiji') #activates imagej
 
+# MACRO USED IN PyImageJ
 macro = """
 #@ String input
 #@ String output
@@ -21,7 +22,8 @@ open(input);
         saveAs("Jpeg", output);
         close();
 """
-def search_copy(subLoc):
+
+def search_copy(subLoc): ## function used 
     New_Directory = os.path.join(os.path.dirname(subLoc),('JPEG_Formatted_ImageJ_' + str(day)))
     for dirpath, dirnames, filenames in os.walk(subLoc):
         New_Loc = New_Directory + '/' + os.path.basename(dirpath)
@@ -34,8 +36,3 @@ def search_copy(subLoc):
             ij.py.run_macro(macro, args)
 directoryLoc = '/workspaces/ImageJ_Automated_Macro/code/test_dir/omega' # directory to be copied
 search_copy(directoryLoc)
-
-""" for names in dirnames:
-            New_Loc = os.path.join(New_Directory,names)
-            if not os.path.exists(New_Loc):
-                os.makedirs(New_Loc) """
