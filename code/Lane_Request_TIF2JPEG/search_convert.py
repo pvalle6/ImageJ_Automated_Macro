@@ -16,9 +16,9 @@ open(input);
 """
 day = date.today()
 def search_copy(sub_loc): ## function used 
-    New_Directory = os.path.join(os.path.dirname(sub_loc),('JPEG_Formatted_ImageJ_' + str(day)))
+    new_directory = os.path.join(os.path.dirname(sub_loc),('JPEG_Formatted_ImageJ_' + str(day)))
     for dirpath, dirnames, filenames in os.walk(sub_loc):
-        New_Loc = New_Directory + '/' + os.path.basename(dirpath)
+        new_loc = new_directory + '/' + os.path.basename(dirpath)
         os.makedirs(new_loc)
         for files in filenames:  
             args ={
