@@ -6,7 +6,7 @@ day = date.today()
 ij = imagej.init('sc.fiji:fiji') #activates imagej
 
 # MACRO USED IN PyImageJ
-macro = """
+MACRO = """
 #@ String input
 #@ String output
 #@output Object greeting
@@ -24,6 +24,6 @@ def search_copy(sub_loc): ## function used
             args ={
             'input': os.path.join(dirpath,files),
             'output': os.path.join(new_loc, files)}
-            ij.py.run_macro(macro, args)
+            ij.py.run_macro(MACRO, args)
 DIRECTORY_LOC = '/workspaces/ImageJ_Automated_Macro/code/test_dir/omega' # directory to be copied
 search_copy(DIRECTORY_LOC)
