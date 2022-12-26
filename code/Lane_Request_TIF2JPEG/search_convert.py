@@ -20,10 +20,8 @@ def search_copy(sub_loc):
     for dirpath, dirnames, filenames in os.walk(sub_loc):
         new_loc = new_directory+'/'+os.path.basename(dirpath)
         os.makedirs(new_loc)
-        for files in filenames:  
-            args={
-            'input': os.path.join(dirpath,files),
-            'output': os.path.join(new_loc, files)}
-            ij.py.run_macro(MACRO, args)
+        for files in filenames:
+            args={'input':os.path.join(dirpath,files),'output':os.path.join(new_loc,files)}
+            ij.py.run_macro(MACRO,args)
 DIRECTORY_LOC='/workspaces/ImageJ_Automated_Macro/code/test_dir/omega'
 search_copy(DIRECTORY_LOC)
