@@ -14,7 +14,7 @@ saveAs("Jpeg", output);
 close();
 """
 day = date.today()
-def search_copy(sub_loc): 
+def search_copy(sub_loc):
     """Searches and Copies a Directory while running each file through PyImageJ"""
     new_directory = os.path.join(os.path.dirname(sub_loc),('JPEG_Formatted_ImageJ_'+str(day)))
     for dirpath, dirnames, filenames in os.walk(sub_loc):
