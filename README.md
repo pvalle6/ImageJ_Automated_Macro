@@ -1,5 +1,5 @@
 
-Recursive search and Convert Script
+# Recursive search and Convert Script
 
 Search_Convert.py
 Script to convert TIF to JPEGs with ImageJ
@@ -8,4 +8,7 @@ Script to convert TIF to JPEGs with ImageJ
 3. Prints message Confirming Success
 Final is UNIX/MACOS compatible
 
-Requires OS, PyImageJ through Mamba
+# Guide
+1. $ pip install -r requirements.txt
+2. Edit DIRECTORY_LOC to directory above folders containing the pictures
+3. $ python search_convert.py
