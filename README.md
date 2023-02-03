@@ -5,7 +5,7 @@ search_convert.py
 Script to convert TIF to JPEGs with ImageJ
 1. Copies Parent Folder to renamed Parent Folder
 2. Recursively Searches and runs Image Conversion Macro on TIF
-3. PSaves images to folder 
+3. Saves images to folder 
 Final is UNIX/MACOS compatible
 
 autocontrast.py
