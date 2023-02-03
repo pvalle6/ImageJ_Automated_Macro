@@ -6,7 +6,6 @@ import imagej  # imports necessary imagej module
 day = date.today()
 ij = imagej.init('sc.fiji:fiji')  # activates imagej
 
-
 ## Two Options:
 ## 1. create convert to JPEG to PNG-> Autocontrast
 ## 2. autocontrast JPEG -> convert to PNG       
@@ -23,7 +22,6 @@ saveAs("PNG", output);
 close();
 """
 day = date.today()
-
 
 def search_copy(sub_loc):
     """Searches and Copies a Directory while running each file through PyImageJ"""
