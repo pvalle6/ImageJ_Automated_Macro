@@ -9,6 +9,12 @@ Script to convert TIF to JPEGs with ImageJ
 Final is UNIX/MACOS compatible
 
 # Guide
-1. $ pip install -r requirements.txt # Run within venv
-2. Edit DIRECTORY_LOC to directory above folders containing the pictures
-4. $ python search_convert.py
+Following https://github.com/imagej/pyimagej
+
+1. conda install mamba -n base -c conda-forge
+2. mamba create -n pyimagej -c conda-forge pyimagej openjdk=8
+3. conda activate pyimagej
+
+4. Edit DIRECTORY_LOC to directory above folders containing the pictures
+5. $ python search_convert.py 
+5. $ python autocontrast.py
