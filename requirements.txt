@@ -1,5 +1,0 @@
-anaconda
-mamba
-imagej
-os
-datetime
