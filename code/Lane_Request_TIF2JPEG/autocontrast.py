@@ -17,11 +17,9 @@ ij = imagej.init('sc.fiji:fiji')  # activates imagej
 MACRO = """
 #@ String input
 #@ String output
-#@output Object greeting
 open(input);
 run("Enhance Contrast", "saturated=0.35");
-run("Close");
-saveAs("JPEG", output);
+saveAs("PNG", output);
 close();
 """
 day = date.today()
